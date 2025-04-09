@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+
+.sidebar {
+    background-color: #121212;
+    width: 240px;
+    padding: 24px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.app{
+    display: flex;
+}
+
+.side-logo{
+    height: 40px;
+    width: 45px;
+    background-image: url(assets/spotify-logo.webp); 
+    background-size: cover;
+}
+
+.app-name{
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 12px;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links i {
+    font-size: 20px;
+}
+
+.library {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b3b3b3;
+    margin-bottom: 16px;
+}
+
+.library :hover{
+    color: #ffffff;
+    /* cursor: pointer; */
+    cursor: pointer;
+}
+
+/* end of navbar */
+
+/* Top Bar */
+
+.content {
+    background: linear-gradient(180deg, #404040 0%, #121212 100%);
+    flex: 1;
+    padding: 24px;
+    overflow-y: auto;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: #ffffff;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-avatar {
+    background-image: url(assets/avatar-photo.png);
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    background-color: #535353;
+    border-radius: 50%;
+}
+
+/* end of top bar */
+
+/* top artists */
+
+.top-artists{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    padding: 20px 0;
+    /* margin-top : 20px; */
+}
+
+.t-artist{
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.artist-image{
+    height: 150px;
+    width: 100%;
+    background-color: #1db954;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    background-size: cover;
+}
+
+/* photos of artists */
+
+.art1{
+    background-image: url(assets/arijit.jpeg);
+}
+
+.art2{
+    background-image: url(assets/ar-rahman.jpeg);
+}
+
+.art3{
+    background-image: url(assets/honey-singh.jpeg);
+}
+
+.art4{
+    background-image: url(assets/sachin-jigar.jpeg);
+}
+
+.art5{
+    background-image: url(assets/karan-aujila.jpeg);
+}
+
+.art6{
+    background-image: url(assets/sunidhi-chauhan.jpeg);
+}
+
+/* Playlists Grid */
+
+.playlists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 24px;
+    padding: 20px 0;
+}
+
+.playlist-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.playlist-card:hover {
+    background-color: #282828;
+}
+
+.playlist-image {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #282828;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    background-size: cover;
+}
+
+.playlist-title {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.playlist-description {
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+/* playlists photos */
+
+.pl1{
+    background-image: url(assets/badshah-hit-list.jpeg);
+}
+
+.pl2{
+    background-image: url(assets/trending.jpeg);
+}
+
+.pl3{
+    background-image: url(assets/workout.jpeg);
+}
+
+.pl4{
+    background-image: url(assets/new-bollywood.jpeg);
+}
+
+.pl5{
+    background-image: url(assets/best-hindi.jpeg);
+}
+
+.pl6{
+    background-image: url(assets/office-work.jpeg);
+}
+
+
+/*  Current Song  */
+
+.track-image{
+    background-image: url(assets/current-song.jpeg);
+    background-size: cover;
+}
+
+.like :hover{
+    color: rgb(180, 54, 54);
+}
+
+
+/* Player Controls */
+
+.player {
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+/* about song playing at a time */
+
+.now-playing {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.track-image {
+    width: 56px;
+    height: 56px;
+    background-color: #282828;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.track-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.artist-name {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+/* controls */
+
+.player-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.control-button {
+    background: none;
+    border: none;
+    color: #b3b3b3;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.control-button :hover{
+    color: #ffffff;
+}
+
+.play-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding to keep to arrow look in the centre */
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.play-button :hover{
+    color: #000000;
+    cursor: progress;
+}
+
+/* progress bar of current song */
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer;  
+}
+
+.progress-bar:hover {  
+    height: 5.5px;
+}
+
+.progress-bar:hover .progress {
+    background-color: #1ed760;  /
+}
+
+/* Added transition for smooth color change */
+.progress {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: #1db954;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;  /* New */
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar:hover .dot {
+    display: block;
+}
+
+/* volume controls */
+
+.volume-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-left: 95px;
+}

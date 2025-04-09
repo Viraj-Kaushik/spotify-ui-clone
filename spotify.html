@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spotify Clone</title>
+
+    <!-- fonts from font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS file -->
+    
+    <link rel="stylesheet" href="spotify.css">
+
+</head>
+
+<!-- Start of body tag -->
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+
+            <div class="app">
+
+                <div class="side-logo">
+                    
+                </div>
+
+                <div class="app-name">
+                    <p>Spotify</p>
+                </div>
+
+            </div>
+            
+
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-home"></i>Home</a>
+                <a href="#"><i class="fas fa-search"></i>Search</a>
+                <a href="#"><i class="fas fa-book"></i>Your Library</a>
+            </div>
+
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-plus-square"></i>Create Playlist</a>
+                <a href="#"><i class="fas fa-heart"></i>Liked Songs</a>
+            </div>
+
+            <div class="library">
+                
+                <div class="library-header">
+                    <span>Your Library</span>
+                    <i class="fas fa-plus"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="content">
+
+            <div class="top-bar">
+
+                <div class="navigation-buttons">
+                    <button class="nav-button"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <div class="user-menu">
+                    <div class="user-avatar"></div>
+                    <span>Viraj Kaushik</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                
+            </div>
+
+            <!-- Welcome message -->
+
+            <h2>Good evening,</h2>
+
+            <!-- popular artists -->
+
+            <div class="top-artists">
+
+                <!-- top artists -->
+
+                <div class="t-artist">
+                    <div class="artist-image art1"></div>
+                    <div class="artist-name">Arijit Singh</div>
+                    <div class="extra">Artist</div>
+                </div>
+
+                <div class="t-artist">
+                    <div class="artist-image art2"></div>
+                    <div class="artist-name">A.R. Rahman</div>
+                    <div class="extra">Artist</div>
+                </div>
+
+                <div class="t-artist">
+                    <div class="artist-image art3"></div>
+                    <div class="artist-name">Honey Singh</div>
+                    <div class="extra">Artist</div>
+                </div>
+
+                <div class="t-artist">
+                    <div class="artist-image art4"></div>
+                    <div class="artist-name">Sachin-Jigar</div>
+                    <div class="extra">Artist</div>
+                </div>
+
+                <div class="t-artist">
+                    <div class="artist-image art5"></div>
+                    <div class="artist-name">Karan Aujla</div>
+                    <div class="extra">Artist</div>
+                </div>  
+
+                <div class="t-artist">
+                    <div class="artist-image art6"></div>
+                    <div class="artist-name">Sunidhi Chauhan</div>
+                    <div class="extra">Artist</div>
+                </div>
+                
+            </div>
+
+            <!-- Playlist grids -->
+
+            <div class="playlists-grid">
+
+                <!-- Playlist Cards -->
+
+                <div class="playlist-card">
+                    <div class="playlist-image pl1"></div>
+                    <div class="playlist-title">Badshah's Hitlist</div>
+                    <div class="playlist-description">Badshah</div>
+                </div>
+                <div class="playlist-card">
+                    <div class="playlist-image pl2"></div>
+                    <div class="playlist-title">Trending in India</div>
+                    <div class="playlist-description">Top trending songs in India</div>
+                </div>
+                <div class="playlist-card">
+                    <div class="playlist-image pl3"></div>
+                    <div class="playlist-title">Workout</div>
+                    <div class="playlist-description">Perfect hindi workout Songs</div>
+                </div>
+                <div class="playlist-card">
+                    <div class="playlist-image pl4"></div>
+                    <div class="playlist-title">New Bollywood Songs</div>
+                    <div class="playlist-description">Recently Launched Hindi Songs</div>
+                </div>
+                <div class="playlist-card">
+                    <div class="playlist-image pl5"></div>
+                    <div class="playlist-title">Best Hindi Songs</div>
+                    <div class="playlist-description">All time favourite Hindi Songs</div>
+                </div>
+                <div class="playlist-card">
+                    <div class="playlist-image pl6"></div>
+                    <div class="playlist-title">Office</div>
+                    <div class="playlist-description">Music for Work and Office</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Player Controls -->
+
+    <div class="player">
+
+        <!-- left part of player -->
+
+        <div class="now-playing">
+
+            <div class="track-image"></div>
+            <div class="track-info">
+                <div class="track-name">Millionaire</div>
+                <div class="artist-name">Honey Singh</div>
+            </div>
+            <div class="like"> <i class="far fa-heart"></i> </div>
+
+        </div>
+
+        <!-- controls and centre part -->
+
+        <div class="player-controls">
+
+            <!-- all icons -->
+
+            <div class="control-buttons">
+
+                <button class="control-button"><i class="fas fa-shuffle"></i></button>
+                <button class="control-button"><i class="fas fa-step-backward"></i></button>
+                <!-- play button designed -->
+                <button class="control-button play-button"><i class="fas fa-play"></i></button>
+                <button class="control-button"><i class="fas fa-step-forward"></i></button>
+                <button class="control-button"><i class="fas fa-repeat"></i></button>
+
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress">
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="volume-controls">
+
+            <i class="fas fa-volume-up"></i>
+            <div class="progress-bar">
+                <div class="progress">
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
