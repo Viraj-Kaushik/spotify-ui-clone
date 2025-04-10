@@ -22,7 +22,6 @@ This is a static clone of the Spotify web interface created using **HTML** and *
 - CSS3
 - Font Awesome for icons
 
----
 
 
 

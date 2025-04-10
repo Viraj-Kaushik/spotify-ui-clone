@@ -134,6 +134,8 @@ body {
     gap: 8px;
 }
 
+/* photo for profile */
+
 .user-avatar {
     background-image: url(assets/avatar-photo.png);
     background-size: cover;
